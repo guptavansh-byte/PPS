@@ -1,13 +1,29 @@
 #include <stdio.h>
-int main()
-{
-    int a , b ,temp;
-    printf("enter two  number : ");
-    scanf("%d%d",&a ,&b);
-    temp = a;
-    a=b;
-    b=temp;
-    printf("after swapping the first number is : %d\n" , a);
-    printf("after swapping second number is : %d" , b );
-    return 0; 
+
+//WAP TO SWAP TWO NUMBERS ENTERED BY THE USER
+int main(){
+
+    int number1 , number2;
+    int temp;
+
+    printf("enter the number 1 :  ");
+    scanf("%d" , &number1);
+
+    printf("enter the number 2 :  ");
+    scanf("%d" , &number2);
+
+    printf("Before swapping : \n");
+
+    printf("number 1 : %d\n" , number1);
+    printf("number 2 : %d\n" , number2);
+
+    temp = number1;
+    number1 = number2;
+    number2 = temp;
+
+    printf(" After swapping : \n");
+    printf("number 1 : %d\n" , number1);
+    printf("number 2 : %d\n" , number2);
+
+    return 0;
 }
