@@ -1,21 +1,24 @@
 #include <stdio.h>
-int main()
-{
-    int a , b;
-    printf("enter first number : ");
-    scanf("%d", &a);
 
-    printf("enter second number :");
-    scanf("%d", &b);
+//ENTER TWO NUMBERS FROM USER AND CHECK WHETHER THEY ARE EQUAL OR NOT.
 
-    if (a==b)
-    {
-    printf("equal");
+int main() {
+
+    int number1, number2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &number1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &number2);
+
+    // Check if the two numbers are equal using the [==] operator
+    if (number1 == number2) {
+        printf("These two numbers are equal.\n");
+    }
+    else {
+        printf("These two numbers are not equal.\n");
     }
     
-    else 
-    {
-        printf("not equal");
-    }
-  
-}                                                                                              
+    return 0;
+}
